@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 
 export const AddContact = () => {
     const { store, dispatch } = useGlobalReducer();
+    const navigate = useNavigate()
 
     const [data, setData] = useState({
         name: "",
@@ -26,29 +27,36 @@ export const AddContact = () => {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    ...data
-            agenda_slug: "meilyn"
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    address: data.address,
+                    agenda_slug:"meilyn_agenda"
                 })
 
             })
 
-            if (response.ok) {
-                throw new Error ("Error al crear el contacto")
+            if (!response.ok) {
+                throw new Error("Error al crear el contacto")
             }
 
             const newContact = await response.json();
-                dispatch({
-                    type: "ADD_CONTACT",
-                    payload: newContact 
-                });
-                setData({
-                    name: "",
-                    phone: "",
-                    email: "",
-                    address: "",
-                });
+            dispatch({
+                type: "ADD_CONTACT",
+                payload: newContact
+            })
+
+            navigate("/")
+
+            setData({
+                name: "",
+                phone: "",
+                email: "",
+                address: "",
+            });
         } catch (error) {
-            console.error("Error:", error);
+            console.error("Error al crear contacto nuevo:", error);
+            alert("Hubo un error al crear el contacto")
         }
     };
 
@@ -68,7 +76,7 @@ export const AddContact = () => {
 
                 <div className="col-md-6">
                     <label htmlFor="inputPhone" className="form-label">Phone</label>
-                    <input type="phone" className="form-control" id="inputPhone" placeholder="Enter Phone" name="phone" value={data.phone} onChange={formChange} />
+                    <input type="tel" className="form-control" id="inputPhone" placeholder="Enter Phone" name="phone" value={data.phone} onChange={formChange} />
                 </div>
 
                 <div className="col-12">
