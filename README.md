@@ -1,58 +1,68 @@
-# 📇 Contact List App
+# 📇 Contact Manager
 
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
-![Vite](https://img.shields.io/badge/Vite-4-646CFF?logo=vite)
+A modern contact management application built with **React**, **Vite**, and **JavaScript**.
 
----
-
-# 📖 Overview
-
-Contact List App is a React application that allows users to manage personal contacts through a simple and intuitive interface.
-
-Users can create, edit, and delete contacts while practicing component-based architecture, routing, and state management.
+The application allows users to create, edit, view, and delete contacts through a clean and responsive interface while demonstrating CRUD operations and REST API integration.
 
 ---
 
-# ✨ Features
+## 📸 Preview
+
+![Contact Manager](src/assets/img/contactlist.jpg)
+
+---
+
+## ✨ Features
 
 - ➕ Create new contacts
 - ✏️ Edit existing contacts
 - 🗑️ Delete contacts
-- 📋 Display contact list
+- 📋 View all contacts
+- 🌐 REST API integration
 - 📱 Responsive interface
+- 🎨 Modern and clean UI
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Technologies
 
-## Frontend
+### Frontend
 
 - React
 - JavaScript (ES6+)
 - Vite
 - CSS3
+- Bootstrap 5
+- React Router
+
+### API
+
+- Fetch API
+- REST API
 
 ---
 
-# 🧠 What I Learned
+## 💡 What I Learned
 
-This project allowed me to practice:
+This project helped me strengthen my knowledge of:
 
 - React components
 - React Hooks
 - State management
 - CRUD operations
+- REST API integration
 - Form handling
 - Component communication
+- Responsive design
 - Reusable UI components
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
-```
+```text
 src/
+│
 ├── assets/
 ├── components/
 ├── hooks/
@@ -64,12 +74,12 @@ src/
 
 ---
 
-# 🚀 Installation
+## 🚀 Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/meylin103/contact-list-app.git
+git clone https://github.com/meylin103/contact-manager.git
 ```
 
 Install dependencies
@@ -86,17 +96,20 @@ npm run start
 
 ---
 
-# 🌱 Future Improvements
+## 🚀 Future Improvements
 
-- Contact search
-- Contact categories
-- Profile pictures
-- Favorites
-- Local storage persistence
-- Dark mode
+- 🔍 Search contacts
+- ⭐ Favorite contacts
+- 📷 Upload profile pictures
+- 🏷️ Contact categories
+- 💾 Local storage support
+- 🌙 Dark mode
+- 🔐 User authentication
 
 ---
 
-# 📄 License
+## 👩‍💻 Author
 
-This project was developed as part of my Full Stack Software Development learning journey and is included in my professional portfolio.
+**Meilyn Fuentes**
+
+- GitHub: https://github.com/meylin103

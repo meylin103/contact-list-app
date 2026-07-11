@@ -62,8 +62,11 @@ export const Home = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1>My Contacts</h1>
+    <div className="container py-4">
+
+      <p className="text-muted fs-5 mb-5">
+        Manage your personal and professional contacts.
+      </p>
       <ContactList
         contacts={store.contacts}
         onDelete={handleDelete}
