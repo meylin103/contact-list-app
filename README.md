@@ -1,115 +1,105 @@
-# 📇 Contact Manager
+# Contact Manager
 
-A modern contact management application built with **React**, **Vite**, and **JavaScript**.
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-The application allows users to create, edit, view, and delete contacts through a clean and responsive interface while demonstrating CRUD operations and REST API integration.
+A modern contact management application built with React and Vite that consumes a REST API to perform full CRUD operations.
 
----
+This project focuses on component-based architecture, global state management, REST API integration, and building a clean, responsive user interface using modern React practices.
 
-## 📸 Preview
+![Contact Manager preview](src/assets/img/contactlist.jpg)
 
-![Contact Manager](src/assets/img/contactlist.jpg)
+## Table of Contents
 
----
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Roadmap](#roadmap)
+- [Author](#author)
+- [License](#license)
 
-## ✨ Features
+## Features
 
-- ➕ Create new contacts
-- ✏️ Edit existing contacts
-- 🗑️ Delete contacts
-- 📋 View all contacts
-- 🌐 REST API integration
-- 📱 Responsive interface
-- 🎨 Modern and clean UI
+- Create, edit, view, and delete contacts (full CRUD)
+- REST API integration for contact management
+- Reusable, isolated UI components
+- Client-side routing with React Router
 
----
+## Tech Stack
 
-## 🛠️ Technologies
-
-### Frontend
-
-- React
-- JavaScript (ES6+)
+**Frontend**
+- React (Hooks, functional components)
 - Vite
-- CSS3
-- Bootstrap 5
+- JavaScript (ES6+)
 - React Router
+- Bootstrap 5 / CSS3
 
-### API
-
-- Fetch API
+**Data**
 - REST API
+- Fetch API
 
----
-
-## 💡 What I Learned
-
-This project helped me strengthen my knowledge of:
-
-- React components
-- React Hooks
-- State management
-- CRUD operations
-- REST API integration
-- Form handling
-- Component communication
-- Responsive design
-- Reusable UI components
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
-│
-├── assets/
-├── components/
-├── hooks/
-├── pages/
-├── routes.jsx
-├── store.js
-└── main.jsx
+├── assets/        # Images and static resources
+├── components/    # Reusable UI components
+├── hooks/         # Global state hook
+├── pages/         # Route-level views
+├── routes.jsx      # App routing configuration
+├── store.js        # Global state management
+└── main.jsx         # Application entry point
 ```
 
----
+## Getting Started
 
-## 🚀 Installation
+### Prerequisites
 
-Clone the repository
+- Node.js
+- npm
+
+### Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/meylin103/contact-manager.git
-```
 
-Install dependencies
+# Move into the project directory
+cd contact-manager
 
-```bash
+# Install dependencies
 npm install
-```
 
-Run the development server
-
-```bash
+# Start the development server
 npm run start
 ```
 
----
 
-## 🚀 Future Improvements
+## Roadmap
 
-- 🔍 Search contacts
-- ⭐ Favorite contacts
-- 📷 Upload profile pictures
-- 🏷️ Contact categories
-- 💾 Local storage support
-- 🌙 Dark mode
-- 🔐 User authentication
+- [ ] Search and filter contacts
+- [ ] Mark contacts as favorites
+- [ ] Upload profile pictures
+- [ ] Contact categories/tags
+- [ ] Local storage / offline support
+- [ ] Dark mode
+- [ ] User authentication
 
----
-
-## 👩‍💻 Author
+## Author
 
 **Meilyn Fuentes**
 
-- GitHub: https://github.com/meylin103
+AWS Certified Cloud Practitioner
+Full Stack Developer
+Cloud & Backend Enthusiast
+
+- GitHub: [@meylin103](https://github.com/meylin103)
+- LinkedIn: [linkedin.com/in/meilynfuentes](https://www.linkedin.com/in/meilynfuentes)
+
+## License
+
+This project is licensed under the MIT License.
